@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: line-gradient(to top,#cfd9df,#e2ebf0);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    margin: 150px auto 20px;
+    padding: 40px 30px 70px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #afafaf;
+}
+h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h2 img{
+    width: 40px;
+    position: absolute;
+    right: 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 3px groove #000;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #5d5d5d;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: #1e008d;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background: #26062f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 1px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px ;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 8px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-block: 10px ;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url(images/unchecked.png);
+    background-size: cover;
+    position: center;
+    left: 8px;
+    top: 12px;
+}
+
+
+ul li.checked{
+    color: #fff;
+    background: #3700a4;
+    border-radius: 50px;
+}
+
+ul li.checked::before{
+    
+    background: url(images/checked.png);
+    background-size: cover;
+   
+}
