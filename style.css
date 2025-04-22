@@ -40,6 +40,7 @@ h2 img{
     justify-content: space-between;
     align-items: center;
     outline: 3px groove #000;
+    outline-offset: 5px;
     border: none;
     border-radius: 30px;
     margin-bottom: 20px;
@@ -79,7 +80,7 @@ ul li{
     font-size: 18px ;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 12px 8px 50px ;
+    padding: 12px 8px 12px 50px ;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -95,8 +96,8 @@ ul li::before{
     background: url(images/unchecked.png);
     background-size: cover;
     position: center;
-    left: 8px;
     top: 12px;
+    left: 8px; 
 }
 
 
@@ -106,9 +107,33 @@ ul li.checked{
     border-radius: 50px;
 }
 
-ul li.checked::before{
-    
+ul li.checked::before{ 
     background: url(images/checked.png);
     background-size: cover;
-   
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    margin-right:5px ;
+    line-height: 30px;
+    width: 30px;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #000;
+    color: #fff;
+}
+ul li.checked span{
+    color: #fff;
+}
+
+ul li.checked span:hover{
+    background: #fff;
+    color: #000;
 }
