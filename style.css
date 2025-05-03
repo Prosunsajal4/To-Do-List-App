@@ -4,6 +4,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.signature {
+    font-family: 'Brush Script MT' ;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.7;
+    font-style: italic;
+    color: #2a4a5c;
+  }
+
+.signature:hover {
+    color: tomato;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
 body{
     width: 100%;
